@@ -2,14 +2,76 @@
 title: "R Notebook"
 output: html_notebook
 ---
+```{r}
+library(readr)
+library(tidyverse)
+seaice <- read_csv(file = "/Users/zhamilyabilyalova/Desktop/github/SeaIce/seaice.csv")
+```
+
+```{r}
+summary(seaice)
+```
+```{r}
+library(lubridate)
+```
+
+
+Extent over time for North
+
+```{r}
+hist(seaice$Extent[seaice$hemisphere == "north"], 
+     main = "North hemisphere",
+     xlab = "Extent of sea ice",
+     ylab = "Frequency of Extent")
+```
+
+
+Extent over time for North
+```{r}
+hist(seaice$Extent[seaice$hemisphere == "south"], 
+     main = "South hemisphere",
+     xlab = "Extent of sea ice",
+     ylab = "Frequency of Extent")
+```
 
 
 ```{r}
-plot(cars)
-
-
-
-
+library(lubridate)
+library(tidyverse)
+library(tibble)
+library(tidyr)
 ```
+
+$Creating a new Date column 
+
+```{r}
+#seaice_final <- unite(seaice, Date, Month, Day, Year, sep = "/")
+seaice_final$Date <- as.Date(seaice_final$Date, "%m/%d/%Y")
+order(seaice_final$Date)
+sorted <- Date[order(seaice_final$Date),]
+```
+
+$Mutating dataset
+
+```{r}
+seaice_final$North <-rep(NA, nrow(seaice_final))
+
+seaice_final$South <- rep(NA, nrow(seaice_final))
+
+mean(seaice_final$Extent[seaice_final$hemisphere == "north"])
+mean(seaice_final$Extent[seaice_final$hemisphere == "south"])
+```
+
+
+```{r}
+plot(seaice$hemisphere, seaice$Extent,
+     main = "Extent of sea ice in both North and South hemispheres",
+     xlim = c(0,16),
+     ylim = c(0,16),
+     pch = 21,
+     cex = 5,
+     col= "red")
+```
+
 
 

@@ -1,0 +1,14 @@
+"0","library(readr)"
+"0","library(tidyverse)"
+"0","seaice <- read_csv(file = ""/Users/zhamilyabilyalova/Desktop/github/SeaIce/seaice.csv"")"
+"2","Parsed with column specification:
+cols(
+  Year = [32mcol_double()[39m,
+  Month = [32mcol_double()[39m,
+  Day = [32mcol_double()[39m,
+  Extent = [32mcol_double()[39m,
+  Missing = [32mcol_double()[39m,
+  `Source Data` = [31mcol_character()[39m,
+  hemisphere = [31mcol_character()[39m
+)
+"

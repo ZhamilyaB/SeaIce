@@ -1,0 +1,33 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1610523706266.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "96508DDF",
+    "lastKnownWriteTime" : 0,
+    "last_content_update" : 1610523706266,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "E22E2818",
+        "caption" : "seaice_final",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=seaice_final&cache_key=E22E2818",
+        "displayedObservations" : 26354,
+        "environment" : "",
+        "expression" : "seaice_final",
+        "object" : "seaice_final",
+        "preview" : 0,
+        "totalObservations" : 26354,
+        "variables" : 7
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

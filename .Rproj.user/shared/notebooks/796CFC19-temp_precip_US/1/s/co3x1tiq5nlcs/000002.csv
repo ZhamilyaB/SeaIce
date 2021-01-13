@@ -1,0 +1,33 @@
+"0","```r
+library(readr)
+library(tidyverse)
+precip <- read_csv(\"data/pr_1901_2015.csv\")
+```"
+"1","Parsed with column specification:
+cols(
+  pr = col_double(),
+  `	Year` = col_integer(),
+  Month = col_integer(),
+  Country = col_character(),
+  ISO3 = col_character(),
+  ISO2 = col_character()
+)
+"
+"0","```r
+temp <- read_csv(\"data/tas_1901_2015.csv\")
+```"
+"1","Parsed with column specification:
+cols(
+  tas = col_double(),
+  `	Year` = col_integer(),
+  Month = col_integer(),
+  Country = col_character(),
+  ISO3 = col_character(),
+  ISO2 = col_character()
+)
+"
+"0","```r
+temp_precip <- full_join(precip, temp, by = c(\"Year\", \"Month\", \"Country\", \"ISO2\", \"ISO3\"))
+```"
+"1","Error: `by` can't contain join column `Year` which is missing from LHS
+"

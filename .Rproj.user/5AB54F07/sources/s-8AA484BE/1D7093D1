@@ -1,26 +1,25 @@
 {
     "collab_server" : "",
     "contents" : "",
-    "created" : 1610486181273.000,
+    "created" : 1610518337709.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
     "hash" : "0",
-    "id" : "88B23CB0",
-    "lastKnownWriteTime" : 1610486206,
-    "last_content_update" : 1610486206422,
-    "path" : "~/Desktop/github/SeaIce/Seaice.Rmd",
-    "project_path" : "Seaice.Rmd",
+    "id" : "1D7093D1",
+    "lastKnownWriteTime" : 1573412728,
+    "last_content_update" : 1610518339910,
+    "path" : "~/Desktop/github/DS_2017-18-big-data-Pr/new_joint/temp_precip_US.Rmd",
+    "project_path" : null,
     "properties" : {
         "chunk_output_type" : "inline",
-        "cursorPosition" : "14,0",
-        "scrollLine" : "0",
-        "tempName" : "Untitled1"
+        "cursorPosition" : "9,43",
+        "scrollLine" : "0"
     },
     "read_only" : false,
     "read_only_alternatives" : [
     ],
-    "relative_order" : 1,
+    "relative_order" : 2,
     "source_on_save" : false,
     "source_window" : "",
     "type" : "r_markdown"

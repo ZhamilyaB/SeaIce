@@ -1,0 +1,4 @@
+"0","hist(seaice$Extent[seaice$hemisphere == ""north""], "
+"0","     main = ""North hemisphere"","
+"0","     xlab = ""Extent of sea ice"","
+"0","     ylab = ""Frequency of Extent"")"
